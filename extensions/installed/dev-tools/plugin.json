@@ -1,0 +1,30 @@
+{
+  "id": "agent.dev-tools",
+  "name": "Developer Tools",
+  "version": "1.0.0",
+  "description": "Web developer tools — DOM inspection, CSS extraction, JS console, network log",
+  "author": "Zoro",
+  "permissions": ["tabs", "page", "storage"],
+  "agent_tools": [
+    {
+      "name": "dom_inspect",
+      "description": "Inspect DOM structure of current page",
+      "entry": "tools/dom.py"
+    },
+    {
+      "name": "css_extract",
+      "description": "Extract CSS styles from current page",
+      "entry": "tools/css.py"
+    },
+    {
+      "name": "js_console",
+      "description": "Execute JavaScript and capture console output",
+      "entry": "tools/console.py"
+    },
+    {
+      "name": "performance_metrics",
+      "description": "Get page performance metrics (load time, resource count, etc.)",
+      "entry": "tools/performance.py"
+    }
+  ]
+}

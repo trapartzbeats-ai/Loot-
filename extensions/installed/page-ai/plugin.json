@@ -1,0 +1,30 @@
+{
+  "id": "agent.page-ai",
+  "name": "AI Page Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered page analysis — explain, research, extract, translate",
+  "author": "Zoro",
+  "permissions": ["tabs", "page", "agent", "storage"],
+  "agent_tools": [
+    {
+      "name": "page_explain",
+      "description": "Explain what a page is about in simple terms",
+      "entry": "tools/explain.py"
+    },
+    {
+      "name": "page_research",
+      "description": "Research a topic using page content + web search",
+      "entry": "tools/research.py"
+    },
+    {
+      "name": "page_extract",
+      "description": "Extract specific data from a page (prices, dates, contacts, etc.)",
+      "entry": "tools/extract.py"
+    },
+    {
+      "name": "page_translate",
+      "description": "Extract and translate page content to another language",
+      "entry": "tools/translate.py"
+    }
+  ]
+}

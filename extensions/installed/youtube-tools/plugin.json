@@ -1,0 +1,30 @@
+{
+  "id": "agent.youtube-tools",
+  "name": "YouTube Tools",
+  "version": "1.0.0",
+  "description": "Download videos, extract transcripts, summarize YouTube content",
+  "author": "Zoro",
+  "permissions": ["tabs", "page", "downloads", "agent", "storage"],
+  "agent_tools": [
+    {
+      "name": "youtube_info",
+      "description": "Get info about a YouTube video (title, duration, views, description)",
+      "entry": "tools/info.py"
+    },
+    {
+      "name": "youtube_transcript",
+      "description": "Extract the transcript/subtitles from a YouTube video",
+      "entry": "tools/transcript.py"
+    },
+    {
+      "name": "youtube_summarize",
+      "description": "Summarize a YouTube video from its transcript",
+      "entry": "tools/summarize.py"
+    },
+    {
+      "name": "youtube_comments",
+      "description": "Extract top comments from a YouTube video",
+      "entry": "tools/comments.py"
+    }
+  ]
+}
