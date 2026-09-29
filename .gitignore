@@ -1,0 +1,13 @@
+# Private/sensitive data - NEVER commit
+data/
+store/
+__pycache__/
+*.pyc
+*.key
+*.enc
+sessions/
+briefcase/
+*_sessions/
+work/
+*.db
+*.db-journal
