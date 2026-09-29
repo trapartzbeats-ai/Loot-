@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hands": {
+      "command": "C:\\Python314\\python.exe",
+      "args": ["D:/Projects/Hermes/hands/server.py"]
+    }
+  }
+}
